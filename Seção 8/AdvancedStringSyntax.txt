@@ -1,0 +1,62 @@
+1)
+'Hello' -> 'Hello'
+"That is Alice's cat." -> "That is Alice's cat."
+'Say hi to Bob\'s mother.' -> "Say hi to Bob's mother."
+
+
+\' -> Singles quote
+\" -> Double quote
+\t -> Tab
+\n -> Newline (line break)
+\\ -> Backslash
+
+2)
+print('Hello there!\nHow are you?\nI\'m fine.')
+
+output:
+Hello there!
+How are you?
+I'm fine.
+
+3) Raw Strings (string that begins with)
+r'Hello' -> 'Hello'
+r'That is Carol\'s cat.' -> "That is Carol\\'s cat."
+print(r'That is Carol\'s cat.') -> That is Carol\'s cat.
+
+5) Multiline Strings (begin and ends with """ or ''')
+
+Use for really big strings, like a text of a test
+
+print("""Dear Alice,
+Eve's cat has been arrested for catnapping, cat burglary, 
+and extortion.
+Sincerely,
+Bob.""")
+
+output:
+Dear Alice,
+Eve's cat has been arrested for catnapping, cat burglary, 
+and extortion.
+Sincerely,
+Bob.
+
+spam = """Dear Alice,
+Eve's cat has been arrested for catnapping, cat burglary, 
+and extortion.
+Sincerely,
+Bob."""
+
+output:
+"Dear Alice, \nEve's cat has been arrested for catnapping,
+cat burglary, and extortion. \nSincerely, \nBob."
+
+
+6) Similitarities between strings and lists
+
+- Index
+- Slices (for substring)
+- Negative Index
+- Element in string(or list)
+
+
+

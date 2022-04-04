@@ -1,0 +1,59 @@
+TO OPEN A FILE TO READ
+
+    helloFile = open('c:\\users\\al\\hello.txt')
+    helloFile.read()
+
+    helloFile.cose()
+
+
+    or
+
+    helloFile = open('c:\\users\\al\\hello.txt')
+    content = helloFile.read()
+    print(content)
+    helloFile.close()
+
+    Another way to do is read line per line, and store this between []
+
+    helloFile = open('c:\\users\\al\\hello.txt')
+    helloFile.readlines()
+    helloFile.close()
+
+    output: ['Hello world!\n', 'How are you?']
+
+
+APPEND MODE('a') AND WRITE METHOD('w')
+     
+    helloFile = open('c:\\users\\al\\hello.txt', 'w')
+    helloFile.write('Hello!!!!!!!')
+    helloFile.close()
+
+    helloFile = open('c:\\users\\al\\hello.txt', 'a')
+    helloFile.write('Hello!!!!!!!')
+    helloFile.close()
+
+THE SHELVE MODULE
+
+    import shelve 
+    shelfFile = shelve.open('mydata')
+    shelfFile['cats'] = ['Zophie', 'Pooka', 'Simon', 'Fat-tail', 'Cleo']
+    shlefFile.close()
+
+    shelfFile = shelve.open('mydata')
+    shelfFile['cats']
+    output: ['Zophie', 'Pooka', 'Simon', 'Fat-tail', 'Cleo']
+
+
+
+TO RECAP:
+- open() will return a file object which has reading and writing-related methods.
+- Pass 'r' (or nothing) to open() to open the file in read mode, 'w' for write mode, 'a' for append mode
+- Opening a nonexistant filename in write or append mode will create that file
+- Call read() or write() to read the contents of a file or write a string to a file
+- Call readlines() to return a list of strings of the file's content 
+- Call close() when you are done with the file
+- The shelve module can store Python values in a binary file
+- shelve.opne() return a dictionary-like shelf value
+
+
+    

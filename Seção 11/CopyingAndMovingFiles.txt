@@ -1,0 +1,36 @@
+COPY AND MOVING
+
+    import shutil
+    shutil.copy('c:\\spam.txt', 'c:\\delicious')
+
+    *this will move spam.txt to delicious folder
+
+    --------------------------------------------------------
+
+    import shutil
+    shutil.copy('c:\\spam.txt', 'c:\\delicious\\spamspamspam.txt')
+
+    *when move the file, you can rename that too
+
+    --------------------------------------------------------
+
+    import shutil
+    shutil.copy('c:\\delicious', 'c:\\delicious_backup')
+
+    *will copy all the files on delicious folder to the delicious_backup folder
+    
+    --------------------------------------------------------
+
+    import shutil
+    shutil.move('c:\\spam.txt', 'c:\\delicious\\wallnut')
+
+    *move() will move the spam.txt to wallnut folder, and will not more exists in the previous folder
+
+    ---------------------------------------------------------
+
+    import shutil
+    shutil.move('c:\\delicious\\wallnut\\spam.txt', 'c:\\delicious\\wallnut\\eggs.txt')
+
+    *this method is just to rename a file
+    
+    ---------------------------------------------------------

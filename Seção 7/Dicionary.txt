@@ -1,0 +1,90 @@
+1)
+myCat = {'size':'fat','color': 'gray', 'disposition':'loud'}
+myCat['size'] -> output 'fat'
+
+'My car has ' + myCat['color'] + ' fur.'
+This prints -> 'My cat has gray fur.'
+
+spam = {12345: 'Luggage combination', 42: 'The Answer'}
+[1,2,3] = [3,2,1] -> SyntaxError
+[1,2,3] == [3,2,1] -> False
+
+eggs = {'name': 'Zophie', 'species': 'cat', 'age': 8}
+ham = {'species': 'cat', 'name': 'Zophie', 'age': 8}
+eggs == ham -> True
+eggs['color'] -> Error 
+eggs -> output {'name': 'Zophie', 'species': 'cat', 'age': 8}
+
+'name' not in eggs -> output False
+
+2) keys()
+list(eggs.keys())
+['name', 'species', 'age']
+
+3) values()
+list(eggs.values())
+['Zophie', 'cat', 8]
+
+4) items()
+list(eggs.items())
+[('name', 'Zophie'), ('species', 'cat'), ('age', 8)]
+
+5)for loops
+
+for k int eggs.keys():
+    print(k)
+
+name 
+species 
+age
+
+=========================
+
+for v in eggs.values():
+    print(v)
+
+Zophie 
+cat 
+8
+
+==================
+
+for k, v in eggs.items():
+    print(k,v)
+
+name Zophie 
+species cat 
+age 8 
+
+==================
+
+for i in eggs.items():
+    print(i)
+
+('name', 'Zophie')
+('species', 'cat')
+('age', 8)
+
+6) 
+'cat' in eggs.values() -> output True
+
+7) get() function
+
+eggs = {'name': 'Zophie', 'species': 'cat', 'age': 8}
+eggs.get('age', 0) -> output 8  **The value after the ',' is the default value if dont exist
+eggs.get('color', '') -> output '' because color dont exist
+
+picnicItems = {'apples': 5, 'cups': 2}
+print('I am bringing ' + str(picnicItems.get('napkins', 0)) + 'to the picnic.') -> output "I am bringing 0 to the picnic"
+because napkins dont exist, so print the default value
+
+8) setdefault() function
+
+eggs = {'name': 'Zophie', 'species': 'cat', 'age': 8}
+eggs.setdefault('color', 'black')
+eggs = {'name': 'Zophie', 'color': 'black', 'species': 'cat', 'age': 8}
+
+
+
+
+

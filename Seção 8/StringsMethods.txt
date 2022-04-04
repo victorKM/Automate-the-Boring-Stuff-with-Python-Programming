@@ -1,0 +1,203 @@
+1) upper() and lower() methods
+
+spam = 'Hello world!'
+spam.upper() -> 'HELLO WORLD!'
+spam.lower() -> 'hellow world!'
+
+======================================================================
+
+example
+
+answer = input()
+if answer.lower() == 'yes':
+      print('Playing again')
+
+Put answer.lower() will validate all type of yes:
+YES, yes, Yes, yES, etc
+
+======================================================================
+
+spam = 'Hello world!'
+spam.islower() -> False
+
+spam = 'hello world!'
+spam.islower() -> True
+
+spam = 'HELLO WORLD!'
+spam.isupper() -> True
+
+spam = ' '
+spam.isupper() -> False
+spam.islower() -> False
+
+'12345'.islower() -> False -> Because there is no letter on the string
+
+'Hello'.upper() -> 'HELLO'
+'Hello'.upper().isupper() >>> TRUE
+
+======================================================================
+
+2) isalpha() verify if the string has only letter, not blanks spaces
+
+>>> 'hello'.isalpha()
+True
+
+>>> 'hello123'.isalpha()
+False
+
+======================================================================
+
+3) isalnum() -> verify if the string has only letter and numbers, not blanks spaces
+
+>>> 'hello123'.isalnum()
+True
+
+======================================================================
+
+4) isdecimal()
+
+>>> '123'.isdecimal()
+True
+
+======================================================================
+
+5) isspace()
+
+>>> '    '.isspace()
+True
+
+>>> 'Hello world!'.isspace()
+False, because 'hello' and 'world' is not space characters
+
+>>> 'Hello world!'[5].isspace()
+True
+
+>>> 'Hello world!'[5]
+' '
+
+>>> 'This Is Title Case.'istitle()
+SyntaxError
+
+>>> 'This Is Title Case.'.istitle()
+True
+
+>>> 'hello world!'.title()
+'Hello World!'
+
+======================================================================
+
+6) startswith()
+
+>>> 'Hello world!'.startswith('Hello')
+True -> because start with Hello
+
+>>> 'Hello world!'.startswith('H')
+True
+
+>>> 'Hello world!'.startswith('ello')
+False
+
+======================================================================
+
+7) endswith()
+
+>>> 'Hello world!'.startswith('world!')
+True 
+
+>>> 'Hello world!'.startswith('world')
+False
+
+======================================================================
+
+8) join()
+
+>>> ','.join(['cats', 'rats', 'bats'])
+'cats, rats, bats'
+
+>>> ''.join(['cats', 'rats', 'bats'])
+'catsratsbats'
+
+>>> ' '.join(['cats', 'rats', 'bats'])
+'cats rats bats'
+
+>>> '\n\n'.join(['cats', 'rats', 'bats'])
+'cats\n\nrats\n\nbats'
+
+>>> print('\n\n.join(['cats', 'rats', 'bats']))
+cats
+
+
+rats
+
+
+bats
+
+======================================================================
+
+9) split()
+
+>>> 'My name is Simon'.split()
+['My', 'name', 'is', 'Simon']
+
+>>> 'My name is Simon'.split('m')
+['My na', 'e is Si', 'on']
+
+======================================================================
+
+10) ljust() and rjust()
+
+>>> 'Hello'.rjust(10)
+'     Hello'
+
+>>> len('     Hello')
+10
+
+>>> 'Hello'.ljust(10)
+'Hello     '
+
+>>> 'Hello'.rjust(10, '*')
+'*****Hello'
+
+>>> 'Hello'.ljust(10, '-')
+'Hello-----'
+
+>>> 'Hello'.center(20)
+'       Hello       '
+
+>>> 'Hello'.center(20, '=')
+'=======Hello========'
+
+======================================================================
+
+10) strip() -> remove white spaces
+            -> or when strip('a'), will remove all 'a' of the string in the extreme sides
+
+>>> 'Hello'.rjust(10)
+'     Hello'
+>>> spam ='Hello'.rjust(10)
+>>> spam.strip()
+'Hello'
+>>> spam
+'     Hello'
+>>> spam = spam.strip()
+>>> spam
+'Hello'
+
+
+lstrip() -> remove white spaces on the left
+rstrip() -> remove white spaces on the right
+
+======================================================================
+
+11) replace()
+
+>>> spam = 'Hello there!'
+>>> spam.replace('e', 'XYZ')
+'HXYZllo thXYZrXYZ!'
+
+======================================================================
+
+
+
+
+

@@ -1,0 +1,39 @@
+DELETING FILES: 
+     
+    import os
+    os.unlink('bacon.txt')
+
+    *will delete the bacon.txt file
+
+    --------------------------------
+
+    os.rmdir('c:\\delicious')
+
+    *will delete this folder, but the folder need to be empty
+
+    import shutil
+    shutil.rmtree('c:\\delicious')
+
+    *now the delicious is a empty folder, so now you can use os.rmdir
+
+    --------------------------------
+
+    import shutil
+    shutil.rmtree('c:\\delicious')
+
+    *will delete all things in the folder
+
+    --------------------------------
+
+    import send2trash
+    send2trash.send2trash('c:\\users\\all\\desktop\\default.txt')
+
+    *will delete and move to the trash
+
+
+TO RECAP:
+    - os.unlink() will delete a file
+    - os.rmdir() will delete a folder (but the folder must be empty)
+    - shutil.rmtree() will delete a folder and all its contents
+    - Deleting can be dangerous, so do a dry run first
+    - send2trash.send2trash() will send a file or folder to the recycling bin

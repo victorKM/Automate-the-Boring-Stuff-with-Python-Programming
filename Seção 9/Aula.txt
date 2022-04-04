@@ -1,0 +1,8 @@
+1) Shebang  Line
+Its useful to create like a .exe to execute
+
+#! python3
+print('Hello World!')
+
+
+After that open cmd and put the directory of the file

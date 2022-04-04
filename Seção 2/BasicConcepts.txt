@@ -1,0 +1,4 @@
+Boolean Data Type: True, False
+Comaprison Operators: ==, !=, <, > , <=, >=
+== is comparison, = is assignment
+Boolean Operators: and, or, not
